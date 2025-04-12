@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Rock - Paper - Scissors</h1>
+        <div class="play-moves">
+            <div>
+                <button class="moves-button" onclick="play(1);">
+                    <img class="moves-img" src="images/rock.png">
+                </button>
+            </div>
+            
+            <div>
+                <button class="moves-button" onclick="play(2);">
+                    <img class="moves-img" src="images/paper.png">
+                </button>
+            </div>
+
+            <div>
+                <button class="moves-button" onclick="play(3);">
+                    <img class="moves-img" src="images/scissors.png">
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="results">
+            <p class="current-result">Choose one move!</p>
+        </div>
+
+        <div class="past-results">
+            <div class="catalog-result">
+                Wins
+            </div>
+            <div class="catalog-result">
+                Loses
+            </div>
+            <div class="catalog-result">
+                Ties
+            </div>
+
+            <div class="catalog-result numbers-wins">
+            </div>
+            <div class="catalog-result numbers-loses">
+            </div>
+            <div class="catalog-result numbers-ties">
+            </div>
+        </div>
+
+        <button onclick="resetScore();">
+            Reset
+        </button>
+        <script src="rock-paper-scissors.js"></script>
+    </body>
+</html>

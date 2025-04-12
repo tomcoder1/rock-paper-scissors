@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    color:white;
+    background-color: #121212;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.play-moves {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.moves-button {
+    background-color: transparent;
+    border: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color:white;
+}
+
+.moves-img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.results {
+    margin-top: 85px;
+}
+
+.result-move-icon {
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color:white;
+}
+
+.current-result {
+    text-align:center;
+    font-size: 30px;
+}
+
+.past-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+}
+
+.catalog-result {
+    font-size: 30px;
+    text-align: center; 
+}
