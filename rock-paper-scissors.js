@@ -1,4 +1,3 @@
-
 const score = JSON.parse(localStorage.getItem('score')) || {
     wins: 0,
     losses: 0,
@@ -16,15 +15,18 @@ function toString(move){
 
 function play(playerMove) {
     const computerMove = Math.floor(Math.random() * 3) + 1;
-    if (playerMove === computerMove){
+    
+    if (playerMove === computerMove) {
         renderResult(playerMove, computerMove, "draw");
         score.ties++;
-    }
-    else if (playerMove > computerMove && playerMove + computerMove != 4){
+    } else if (
+        (playerMove === 1 && computerMove === 3) || 
+        (playerMove === 2 && computerMove === 1) || 
+        (playerMove === 3 && computerMove === 2)    
+    ) {
         renderResult(playerMove, computerMove, "win");
         score.wins++;
-    }
-    else{
+    } else {
         renderResult(playerMove, computerMove, "lose");
         score.losses++;
     }
