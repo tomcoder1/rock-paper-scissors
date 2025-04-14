@@ -63,6 +63,7 @@ function resetScore() {
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
+    localStorage.setItem('score', JSON.stringify(score));
     renderScoreboard();
 }
 
